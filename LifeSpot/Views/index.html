@@ -6,16 +6,13 @@
     <link href="../Static/CSS/index.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="../Static/JS/index.js"></script>
     <script>
-        //checkAge();
-        //handleSession();
-        sessionLog();
+        // обработка сессии
+/*        handleSession(logger, checker *//* Коллбек-функции *//*);*/
 
-        // Добавляем обработчик события input для поля поиска
-        document.getElementsByTagName('input')[0].addEventListener('input', filterContent);
-
-        setTimeout(() =>
-            alert("Нравится LifeSpot? " + '\n' + "Подпишитесь на наш Instagram @lifespot999!"),
-            30000);
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
     </script>
 </head>
 <header id="header-index">
